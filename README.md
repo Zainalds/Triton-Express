@@ -1,6 +1,6 @@
 # Triton-Express
 
-This application is designed using the .NET Core WebAPI framework and front-end developed using normal MVC. All data is stored in a MSSQL database. The application tracks vehicles at each branch and at any given time can be assigned a waybill.
+This application is designed using the .NET Core WebAPI framework. All data is stored in a MSSQL database. The application tracks vehicles at each branch and at any given time can be assigned a waybill.
 
 ![Home Screen](https://user-images.githubusercontent.com/68240955/98448089-687c7380-2132-11eb-9c55-562ed78064be.png)
 
