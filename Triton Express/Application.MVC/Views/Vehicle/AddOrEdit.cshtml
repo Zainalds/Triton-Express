@@ -35,6 +35,8 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 </head>
 <body>
 
@@ -106,14 +108,13 @@
                         {
                             Text = "Johannesburg",
                             Value = "Johannesburg",
-                            Selected = true
                         });
                     }
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Branch</label></div>
                         <div class="col-12 col-md-9">
                             @* <input type="text" id="text-input" name="text-input" placeholder="Identity No" class="form-control">*@
-                            @Html.DropDownListFor(model => model.Branch, listItems, new { @class = "form-control" })
+                            @Html.DropDownListFor(model => model.Branch, listItems, "---Select---", new { @class = "form-control" })
                         </div>
                     </div>
                 </div>

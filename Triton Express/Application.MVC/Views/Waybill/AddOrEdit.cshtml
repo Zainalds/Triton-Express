@@ -26,16 +26,18 @@
     <link rel="stylesheet" href="~/Content/assets//css/themify-icons.css">
     <link rel="stylesheet" href="~/Content/assets//css/flag-icon.min.css">
     <link rel="stylesheet" href="~/Content/assets//css/cs-skin-elastic.css">
-    <!-- <link rel="stylesheet" href="~/Content/assets//css/bootstrap-select.less"> -->
-    <link rel="stylesheet" href="~/Content/assets//scss/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="~/css/chosen.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="~/Content/assets//css/bootstrap-select.less"> --    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
     @*<title>jQuery UI Datepicker - Default functionality</title>*@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript">
+    <script src="~/js/chosen.jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script>
         $(function () {
             $("#my_custom_id").chosen();
         });
@@ -92,12 +94,12 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                            <div class="col col-md-3"><label for="text-input" class=" form-control-label">Vehicle</label></div>
-                            <div class="col-12 col-md-9">
-                                @Html.DropDownListFor(m => m.Vehicle_Registration_Number, (IEnumerable<SelectListItem>)ViewBag.listAuthers, "---Select---", new { @class = "form-control", id = "my_custom_id" })
-                                @Html.ValidationMessageFor(model => model.Vehicle_Registration_Number, "", new { @class = "text-danger" })
-                            </div>
-                     </div>
+                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Vehicle</label></div>
+                        <div class="col-12 col-md-9">
+                            @Html.DropDownListFor(m => m.Vehicle_Registration_Number, (IEnumerable<SelectListItem>)ViewBag.listAuthers, "---Select---", new { @class = "form-control", @id = "my_custom_id" })
+                            @Html.ValidationMessageFor(model => model.Vehicle_Registration_Number, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card-footer" align="right">
@@ -111,5 +113,3 @@
 
 </body>
 </html>
-
-

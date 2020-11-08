@@ -16,7 +16,7 @@ namespace Application.MVC.Models
         [Display(Name = "Vehicle Make")]
         public string Vehicle_Make { get; set; }
         [Required]
-        [Display(Name = "VehicleModel")]
+        [Display(Name = "Vehicle Model")]
         public string Vehicle_Model { get; set; }
         [Required]
         [Display(Name = "Branch")]
