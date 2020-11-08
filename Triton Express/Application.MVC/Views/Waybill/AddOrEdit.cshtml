@@ -81,7 +81,7 @@
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Total Weight</label></div>
                         <div class="col-12 col-md-9">
-                            @Html.TextBoxFor(model => model.Waybill_Total_weight, new { htmlAttributes = new { @class = "form-control", placeholder = "Name" } })
+                            @Html.TextBoxFor(model => model.Waybill_Total_weight, new { @class = "form-control", placeholder = "Total Weight" } )
                             @Html.ValidationMessageFor(model => model.Waybill_Total_weight, "", new { @class = "text-danger" })
                         </div>
 
@@ -89,7 +89,7 @@
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Total Parcels</label></div>
                         <div class="col-12 col-md-9">
-                            @Html.TextBoxFor(model => model.Waybil_Total_Parcels_Allocated, new { htmlAttributes = new { @class = "form-control", placeholder = "Surname" } })
+                            @Html.TextBoxFor(model => model.Waybil_Total_Parcels_Allocated, new { @class = "form-control", placeholder = "Total Parcels" } )
                             @Html.ValidationMessageFor(model => model.Waybil_Total_Parcels_Allocated, "", new { @class = "text-danger" })
                         </div>
                     </div>

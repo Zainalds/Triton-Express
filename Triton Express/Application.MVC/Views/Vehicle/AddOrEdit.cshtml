@@ -76,7 +76,7 @@
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Number Plate</label></div>
                         <div class="col-12 col-md-9">
-                            @Html.TextBoxFor(model => model.Vehicle_Number_Plate, new { htmlAttributes = new { @class = "form-control", placeholder = "Name" } })
+                            @Html.TextBoxFor(model => model.Vehicle_Number_Plate,  new { @class = "form-control", placeholder = "Number Plate" } )
                             @Html.ValidationMessageFor(model => model.Vehicle_Number_Plate, "", new { @class = "text-danger" })
                         </div>
 
@@ -84,7 +84,7 @@
                     <div class="row form-group">
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Vehicle Make</label></div>
                         <div class="col-12 col-md-9">
-                            @Html.TextBoxFor(model => model.Vehicle_Make, new { htmlAttributes = new { @class = "form-control", placeholder = "Surname" } })
+                            @Html.TextBoxFor(model => model.Vehicle_Make,  new { @class = "form-control", placeholder = "Vehicle Make" } )
                             @Html.ValidationMessageFor(model => model.Vehicle_Make, "", new { @class = "text-danger" })
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                         <div class="col col-md-3"><label for="text-input" class=" form-control-label">Vehicle Model</label></div>
                         <div class="col-12 col-md-9">
                             @* <input type="text" id="text-input" name="text-input" placeholder="Identity No" class="form-control">*@
-                            @Html.TextBoxFor(model => model.Vehicle_Model, new { htmlAttributes = new { @class = "form-control", placeholder = "Identity No" } })
+                            @Html.TextBoxFor(model => model.Vehicle_Model,new { @class = "form-control", placeholder = "Vehicle Model" } )
                             @Html.ValidationMessageFor(model => model.Vehicle_Model, "", new { @class = "text-danger" })
                         </div>
                     </div>
